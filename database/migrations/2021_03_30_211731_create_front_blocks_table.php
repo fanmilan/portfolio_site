@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateLinksTable extends Migration
+class CreateFrontBlocksTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,12 @@ class CreateLinksTable extends Migration
      */
     public function up()
     {
-        Schema::create('links', function (Blueprint $table) {
+        Schema::create('front_blocks', function (Blueprint $table) {
             $table->id();
-            $table->string('type');
-            $table->string('link');
-            $table->morphs('linkable');
+            $table->string('name');
+            $table->unsignedTinyInteger('sort_id')->default(1);
+            $table->boolean('editable')->default(1);
+            $table->boolean('disabled')->default(1);
             $table->timestamps();
         });
     }
@@ -29,6 +30,6 @@ class CreateLinksTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('links');
+        Schema::dropIfExists('front_blocks');
     }
 }

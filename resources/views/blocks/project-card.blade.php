@@ -1,12 +1,16 @@
 <div class="project-card">
     <div class="project-card__image-wrap">
-        <div class="project-card__image"></div>
+        <div class="project-card__image">
+            @if (isset($project->cover))
+                <img src="{{$project->cover->thumbnail(null, 200)}}" alt="Обложка"/>
+            @endif
+        </div>
     </div>
     <div class="project-card__body">
         <div class="project-card__tags tags">
-            <div class="tags__item">React</div>
-            <div class="tags__item">PHP</div>
-            <div class="tags__item">JavaScript</div>
+            @foreach ($project->tags as $tag)
+                <div class="tags__item">{{$tag->name}}</div>
+            @endforeach
         </div>
         <h2 class="project-card__title">{{ $project->name }}</h2>
         <div class="project-card__description">{{$project->description}}</div>
@@ -15,7 +19,7 @@
             <a class="project-card__link"></a>
         </div>
         -->
-        <div class="project-card__more-btn">Перейти</div>
+        <a class="project-card__more-btn" href="{{route('project', $project->id)}}">Перейти</a>
     </div>
 
 </div>

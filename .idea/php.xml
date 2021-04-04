@@ -108,6 +108,10 @@
       <path value="$PROJECT_DIR$/vendor/facade/flare-client-php" />
       <path value="$PROJECT_DIR$/vendor/facade/ignition-contracts" />
       <path value="$PROJECT_DIR$/vendor/facade/ignition" />
+      <path value="$PROJECT_DIR$/vendor/spatie/image-optimizer" />
+      <path value="$PROJECT_DIR$/vendor/code16/sharp" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/vendor/erusev/parsedown" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.3" />
