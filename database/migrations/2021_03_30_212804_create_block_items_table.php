@@ -20,7 +20,6 @@ class CreateBlockItemsTable extends Migration
                 ->onUpdate('cascade')
                 ->onDelete('cascade');
             $table->json('params');
-            $table->unsignedTinyInteger('sort_id');
             $table->timestamps();
         });
     }

@@ -25,6 +25,7 @@ class FrontBlockSeeder extends Seeder
 
         DB::table('block_items')->insert([
             'front_block_id'=>1,
+            'type'=>2,
             'params'=>'[
    {
       "background":"https://fengyuanchen.github.io/cropperjs/images/picture.jpg",

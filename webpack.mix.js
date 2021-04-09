@@ -13,5 +13,7 @@ const mix = require('laravel-mix');
 
 mix
     .sass('resources/scss/main.scss', 'public/css')
+    .sass('resources/scss/font-awesome.scss', 'public/css')
+    .sass('resources/scss/app.scss', 'public/css')
     .browserSync('http://localhost:8000/');
 

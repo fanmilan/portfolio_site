@@ -19,11 +19,23 @@ body{
 }
 
 .personal{
-    max-width:1000px;
     width:100%;
-    color:white;
     margin:auto;
+    position:relative;
+    height:400px;
     display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__name{
+        margin: 0 0 10px 0;
+        color: #a4a5a6;
+        color: #939393;
+    }
+
+    &__work{
+        letter-spacing: 2px;
+    }
 
     &__image{
         padding:0 10px;
@@ -43,129 +55,150 @@ body{
     &__body{
         margin-bottom:40px;
     }
+
+
 }
+
+
 
 
 .container{
+
+    border-top: 1px solid #ececec;
+    background: #fbfbfb;
     width:100%;
-    max-width:1100px;
-    margin:auto;
+    color: #979899;
+    color: #727272;
+    position:relative;
 
-    &__title{
 
-
-    }
-
-    &__second-title{
-        color: #999;
-    }
-}
-
-.projects{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: center;
-    align-items: stretch;
-}
-
-.project-card{
-    width: calc(50% - 20px);
-    background-color: white;
-    position: relative;
-    margin:10px 10px;
-    border-bottom:5px solid #1e94fe;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.15);
-
-    &__image-wrap{
-        width:100%;
-        height:200px;
-
-    }
-
-    &__image{
-        background:#4a5568;
-        width:100%;
+    &__background{
+        position:absolute;
+        top:0;
+        right:0;
+        width:50%;
+        background: white;
         height:100%;
     }
 
-    &__body{
-        padding:0 25px 25px 25px;
-        border-right:1px solid #ececec;
-        border-left:1px solid #ececec;
+    &__inside{
         display:flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: stretch;
-        height:calc(100% - 200px);
+        width:100%;
+        max-width:1100px;
+        margin:auto;
+    }
+
+
+
+    &__header{
+        width:30%;
+        background: #fbfbfb;
+        padding:50px;
+    }
+
+    &__body{
+        background: white;
+        width:70%;
+        padding:50px;
+        z-index:1;
     }
 
     &__title{
-        color:black;
-        font-weight:300;
-        text-align:left;
-        margin:20px 0;
-        font-size:22px;
-
+        margin:0;
     }
 
-    &__description{
-        font-size:15px;
-        color:rgba(0,0,0,0.5);
+
+    @media (max-width: 1000px) {
+        &__inside{
+            flex-direction: column;
+        }
+
+        &__header, &__body{
+            width:100%;
+        }
+
+        &__background{
+            display:none;
+        }
     }
 
-    &__link{
-        width:100px;
-        height:25px;
-        background:url('https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png') 50% 50% no-repeat;
-        display:block;
-        background-size:cover;
+
+    &_about{
+        background: #f8f8f8;
+        .container__background{
+            background: #fcfcfc;
+        }
+
+
+        .container__header{
+            background: #f8f8f8;
+        }
+
+        .container__body{
+            background: #fcfcfc;
+        }
     }
 
-    &__more-btn{
-        margin-top:25px;
-        color: #2196fe;
-        text-transform: uppercase;
-        letter-spacing: 2px;
+    &_skills{
+        background:#f8f8f8;
+
+        .container__background{
+            background: #fcfcfc;
+        }
+
+        .container__header{
+            background: #f8f8f8;
+        }
+
+        .container__body{
+            background: #fcfcfc;
+        }
     }
+
+    &_projects{
+        background:#fcfcfc;
+
+        .container__background{
+            background: white;
+        }
+
+        .container__header{
+            background: #fcfcfc;
+        }
+
+        .container__body{
+            background: white;
+        }
+    }
+
+    &_feedback{
+        background:#f8f8f8;
+
+        .container__background{
+            background: #fcfcfc;
+        }
+
+        .container__header{
+            background: #f8f8f8;
+        }
+
+        .container__body{
+            background: #fcfcfc;
+        }
+    }
+
 }
 
-.tags{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: flex-start;
-    margin-top:5px;
 
-    &__item{
-        margin:2px;
-        border: 1px solid rgba(0,0,0,0.3);
-        border-radius: 3px;
-        color: rgba(0,0,0,0.5);
-        letter-spacing: 2px;
-        padding:2px 5px;
-        text-align: center;
-        text-transform: uppercase;
-        white-space: nowrap;
-        font-size:10px;
-    }
-}
+
+
+
+
+
 
 
 .education{
-    padding-left:25px;
-    padding-bottom:30px;
     position:relative;
-    border-left:1px solid #1e94fe;
-
-    &:before{
-        width: 12px;
-        height: 12px;
-        border: 2px solid #1e94fe;
-        position: absolute;
-        content: "";
-        border-radius: 50%;
-        background-color: #fff;
-        left: -8px;
-    }
 
     &__title{
         font-weight:bold;
@@ -180,20 +213,85 @@ body{
     }
 }
 
-.footer{
-    padding:50px;
-    background:rgb(100, 100, 100);
-    color:white;
-
-    &__inside{
-        max-width:1000px;
-        margin:auto;
-    }
-}
 
 .contacts{
     &__social-link{
         color:inherit;
         display:block;
+    }
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+.skill{
+    flex:0 0 25%;
+    width:25%;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    padding:10px;
+
+    &__name{
+        font-size:20px;
+    }
+
+    &__icon{
+        border-radius: 50%;
+       /* background: #4a5568;*/
+        width:30px;
+        height:30px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-size:18px;
+        margin-right:10px;
+    }
+}
+
+.avatar{
+    height:190px;
+    width:190px;
+    background:grey;
+    border-radius: 50%;
+    position:relative;
+    overflow:hidden;
+    background:url('/img/avatar2.jpg') 50% 50% no-repeat;
+    background-size:cover;
+
+
+    img{
+        max-width:100%;
+        max-height:100%;
+        display:none;
+
+    }
+}
+
+
+
+.page{
+
+
+    &_projects{
+
+    }
+}
+
+
+.back-btn{
+    position:absolute;
+    top:5px;
+    left:5px;
+    z-index:1;
+
+    &__link{
+        text-decoration: none;
+        color:inherit;
+        font-size:20px;
     }
 }

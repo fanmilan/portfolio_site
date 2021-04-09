@@ -14,23 +14,28 @@ class MailController extends BaseController
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $mails = Mail::all();
-        return $this->sendResponse($mails->toArray(), 'Mails retrieved successfully.');
+        $mails = Mail::all()->map(function($item){
+            return [
+                'id'=>$item->id,
+                'name'=>$item->name,
+                'created_at'=>$item->items
+            ];
+            });
+        return $this->sendResponse($mails->toArray());
     }
 
     public function store(Request $request)
     {
         $input = $request->all();
-       /* $validator = Validator::make($input, [
-            'email' => 'required',
-            'type' => 'required'
+        $request->validate([
+            'email' => 'required|email',
+        ], [
+            'email.required' => 'Email обязателен к заполнению'
         ]);
-        if($validator->fails()){
-            return $this->sendError('Validation Error.', $validator->errors());
-        }*/
+
         $mail = Mail::create($input);
-        return $this->sendResponse($mail->toArray(), 'Mail created successfully.');
+        return $this->sendResponse($mail->toArray());
     }
 }

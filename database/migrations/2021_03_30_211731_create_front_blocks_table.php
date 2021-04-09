@@ -17,7 +17,7 @@ class CreateFrontBlocksTable extends Migration
             $table->id();
             $table->string('name');
             $table->unsignedTinyInteger('sort_id')->default(1);
-            $table->boolean('editable')->default(1);
+            $table->unsignedTinyInteger('type')->default(1);
             $table->boolean('disabled')->default(1);
             $table->timestamps();
         });
