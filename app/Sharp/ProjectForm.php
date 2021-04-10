@@ -6,6 +6,7 @@ use App\Models\Project;
 use App\Models\Tag;
 use Code16\Sharp\Form\Eloquent\Uploads\Transformers\SharpUploadModelFormAttributeTransformer;
 use Code16\Sharp\Form\Eloquent\WithSharpFormEloquentUpdater;
+use Code16\Sharp\Form\Fields\SharpFormCheckField;
 use Code16\Sharp\Form\Fields\SharpFormDateField;
 use Code16\Sharp\Form\Fields\SharpFormListField;
 use Code16\Sharp\Form\Fields\SharpFormSelectField;
@@ -74,6 +75,10 @@ class ProjectForm extends SharpForm
                     ->setLabel('Код страницы')
             )
             ->addField(
+                SharpFormCheckField::make('published', 'Опубликовано')
+                    ->setText('Опубликовано')
+            )
+            ->addField(
                 SharpFormTextareaField::make('description')
                     ->setLabel('Описание')
                     ->setRowCount(4)
@@ -119,6 +124,7 @@ class ProjectForm extends SharpForm
             $column
                 ->withSingleField('name')
                 ->withSingleField('code')
+                ->withSingleField('published')
                 ->withSingleField('cover')
                 ->withSingleField('description')
                 ->withSingleField('tags')

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\API\MailController;
 use App\Http\Controllers\API\IdeaController;
+use App\Http\Controllers\API\FeedbackController;
 use App\Http\Controllers\API\FrontEditorController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -24,6 +25,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::apiResource('mails', MailController::class);
 Route::apiResource('ideas', IdeaController::class);
+
 
 
 Route::get('front_editor/front', [FrontEditorController::class, 'getBlocksForFront']);

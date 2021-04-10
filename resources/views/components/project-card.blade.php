@@ -10,8 +10,16 @@
     -->
     <div class="project-card__body">
         <div class="project-card__links">
-            <a class="project-card__link project-card__link_github" title="github"><i class="fab fa-github"></i></a>
-            <a class="project-card__link project-card__link_demo" title="demo"><i class="fas fa-play-circle"></i></a>
+            @foreach ($project->links as $link)
+                @switch (strtolower($link->type))
+                    @case('demo')
+                        <a class="project-card__link project-card__link_demo" title="demo" href="{{$link->link}}"><i class="fas fa-play-circle"></i></a>
+                    @break
+                    @case('github')
+                        <a class="project-card__link project-card__link_github" title="github" href="{{$link->link}}"><i class="fab fa-github"></i></a>
+                    @break
+                @endswitch
+            @endforeach
         </div>
         <div class="project-card__tags tags">
             @foreach ($project->tags as $tag)

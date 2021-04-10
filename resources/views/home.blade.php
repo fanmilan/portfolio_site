@@ -1,16 +1,13 @@
 <x-layout name="home">
     <x-section>
         <x-slot name="image">
-            <div class="avatar">
-                <img src="{{ asset('img/avatar.jpg') }}" />
-            </div>
+            <div class="avatar"></div>
         </x-slot>
         <div class="personal">
             <div class="personal__header">
                 <h1 class="personal__name">Пищулин Владимир</h1>
                 <div class="personal__work">Fullstack - разработчик</div>
             </div>
-
             <x-contacts/>
         </div>
     </x-section>
@@ -51,7 +48,7 @@
 
             <x-skill name="jQuery">
                 <x-slot name="icon">
-                    <i class="fab fa-js"></i>
+                    <span class="icon-jquery"></span>
                 </x-slot>
             </x-skill>
 
@@ -75,7 +72,7 @@
 
             <x-skill name="MySQL">
                 <x-slot name="icon">
-                    <i class="fab fa-js"></i>
+                    <span class="icon-mysql"></span>
                 </x-slot>
             </x-skill>
         </x-skills>

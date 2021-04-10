@@ -1,5 +1,8 @@
 <div class="contacts">
     <div class="contacts__social-btns">
+        <x-social-btn href="https://t.me/fanmilan">
+            <i class="fab fa-telegram-plane"></i>
+        </x-social-btn>
         <x-social-btn href="https://vk.com/fanmilan">
             <i class="fab fa-vk"></i>
         </x-social-btn>
