@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\API;
 
 use App\Models\Idea;
-use Validator;
 use Illuminate\Http\Request;
 
 class IdeaController extends BaseController

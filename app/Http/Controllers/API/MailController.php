@@ -2,9 +2,7 @@
 
 namespace App\Http\Controllers\API;
 
-use App\Http\Controllers\Controller;
 use App\Models\Mail;
-use Validator;
 use Illuminate\Http\Request;
 
 class MailController extends BaseController
@@ -19,7 +17,7 @@ class MailController extends BaseController
         $mails = Mail::all()->map(function($item){
             return [
                 'id'=>$item->id,
-                'name'=>$item->name,
+                'email'=>$item->email,
                 'created_at'=>$item->items
             ];
             });

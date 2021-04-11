@@ -19,38 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c107bcae-8c6f-48cb-933e-a4a6596e845e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/BaseController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/FrontEditorController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/MailController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/BlockItem.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/FrontBlock.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Mail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_03_30_211731_create_front_blocks_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_03_30_212804_create_block_items_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeders/FrontBlockSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/project.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/projects/search_artmx.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/projects/snake.blade.php" afterDir="false" />
+    <list default="true" id="c107bcae-8c6f-48cb-933e-a4a6596e845e" name="Default Changelist" comment="add api">
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/portfolio_site.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/portfolio_site.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Link.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Link.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Project.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Project.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Tag.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_19_200152_create_projects_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_19_200152_create_projects_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_03_19_200739_create_links_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_03_19_200739_create_links_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/ProjectSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/ProjectSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/blocks/project-card.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blocks/project-card.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/FrontEditorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/FrontEditorController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/IdeaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/IdeaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/MailController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/MailController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +71,6 @@
       <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
       <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
       <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
-      <path value="$PROJECT_DIR$/vendor/fruitcake/laravel-cors" />
       <path value="$PROJECT_DIR$/vendor/phar-io/version" />
       <path value="$PROJECT_DIR$/vendor/fideloper/proxy" />
       <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
@@ -160,7 +134,6 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/type" />
       <path value="$PROJECT_DIR$/vendor/brick/math" />
       <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
-      <path value="$PROJECT_DIR$/vendor/asm89/stack-cors" />
       <path value="$PROJECT_DIR$/vendor/psr/http-message" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
       <path value="$PROJECT_DIR$/vendor/psr/http-client" />
@@ -183,6 +156,8 @@
       <path value="$PROJECT_DIR$/vendor/code16/sharp" />
       <path value="$PROJECT_DIR$/vendor/intervention/image" />
       <path value="$PROJECT_DIR$/vendor/erusev/parsedown" />
+      <path value="$PROJECT_DIR$/vendor/fruitcake/laravel-cors" />
+      <path value="$PROJECT_DIR$/vendor/asm89/stack-cors" />
     </include_path>
   </component>
   <component name="ProjectId" id="1pzMRm6d9ZSZOIjUDdffo5I81BI" />
@@ -194,20 +169,22 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/database/seeders" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers/API" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Vladimir\PhpstormProjects\portfolio_site\app\Http\Controllers\API" />
+      <recent name="C:\Users\Vladimir\PhpstormProjects\portfolio_site\resources" />
+      <recent name="C:\Users\Vladimir\PhpstormProjects\portfolio_site\public\img" />
+      <recent name="C:\Users\Vladimir\PhpstormProjects\portfolio_site\resources\views\components" />
       <recent name="C:\Users\Vladimir\PhpstormProjects\portfolio_site\database\seeders" />
-      <recent name="C:\Users\Vladimir\PhpstormProjects\portfolio_site\database\migrations" />
-      <recent name="C:\Users\Vladimir\PhpstormProjects\portfolio_site\routes" />
-      <recent name="C:\Users\Vladimir\PhpstormProjects\portfolio_site\app\Models" />
-      <recent name="C:\Users\Vladimir\PhpstormProjects\portfolio_site\app\Http\Controllers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Vladimir\PhpstormProjects\portfolio_site\resources\css" />
+      <recent name="C:\Users\Vladimir\PhpstormProjects\portfolio_site\resources\views\components" />
       <recent name="C:\Users\Vladimir\PhpstormProjects\portfolio_site\app\Models" />
     </key>
   </component>
@@ -227,8 +204,58 @@
       <updated>1616181459786</updated>
       <workItem from="1616181460825" duration="46014000" />
       <workItem from="1616790990090" duration="90000" />
-      <workItem from="1617477287976" duration="943000" />
+      <workItem from="1617477287976" duration="81110000" />
     </task>
+    <task id="LOCAL-00001" summary="add api">
+      <created>1617566507184</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1617566507184</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add Api, change design">
+      <created>1617981772737</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1617981772737</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add styles">
+      <created>1617982199484</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1617982199484</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add mail">
+      <created>1618036052357</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1618036052357</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Update projects">
+      <created>1618036446585</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1618036446585</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Allow cors">
+      <created>1618038777930</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1618038777930</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Allow cors">
+      <created>1618058249613</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1618058249613</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +271,15 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add api" />
+    <MESSAGE value="Add Api, change design" />
+    <MESSAGE value="Add styles" />
+    <MESSAGE value="Add mail" />
+    <MESSAGE value="Update projects" />
+    <MESSAGE value="Allow cors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Allow cors" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1025" y="290" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1616185891875">
@@ -266,13 +302,25 @@
       <screen x="0" y="0" width="2560" height="1050" />
     </state>
     <state x="1063" y="229" key="Github.UntrackedFilesDialog/0.0.2560.1050@0.0.2560.1050" timestamp="1616196319053" />
-    <state x="1115" y="448" key="NewPhpFileDialog" timestamp="1616453189742">
+    <state x="982" y="247" key="NewPhpClassDialog" timestamp="1618034844079">
       <screen x="0" y="0" width="2560" height="1050" />
     </state>
-    <state x="1115" y="448" key="NewPhpFileDialog/0.0.2560.1050@0.0.2560.1050" timestamp="1616453189742" />
-    <state x="987" y="258" width="585" height="534" key="find.popup" timestamp="1616434872048">
+    <state x="982" y="247" key="NewPhpClassDialog/0.0.2560.1050@0.0.2560.1050" timestamp="1618034844079" />
+    <state x="1115" y="448" key="NewPhpFileDialog" timestamp="1618034730702">
       <screen x="0" y="0" width="2560" height="1050" />
     </state>
-    <state x="987" y="258" width="585" height="534" key="find.popup/0.0.2560.1050@0.0.2560.1050" timestamp="1616434872048" />
+    <state x="1115" y="448" key="NewPhpFileDialog/0.0.2560.1050@0.0.2560.1050" timestamp="1618034730702" />
+    <state x="872" y="257" key="Vcs.Push.Dialog.v2" timestamp="1618058270189">
+      <screen x="0" y="0" width="2560" height="1050" />
+    </state>
+    <state x="872" y="257" key="Vcs.Push.Dialog.v2/0.0.2560.1050@0.0.2560.1050" timestamp="1618058270189" />
+    <state x="987" y="258" width="585" height="534" key="find.popup" timestamp="1618060492876">
+      <screen x="0" y="0" width="2560" height="1050" />
+    </state>
+    <state x="987" y="258" width="585" height="534" key="find.popup/0.0.2560.1050@0.0.2560.1050" timestamp="1618060492876" />
+    <state x="943" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1617894100909">
+      <screen x="0" y="0" width="2560" height="1050" />
+    </state>
+    <state x="943" y="227" width="672" height="678" key="search.everywhere.popup/0.0.2560.1050@0.0.2560.1050" timestamp="1617894100909" />
   </component>
 </project>

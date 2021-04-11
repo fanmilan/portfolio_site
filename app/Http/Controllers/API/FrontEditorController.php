@@ -12,13 +12,13 @@ class FrontEditorController extends BaseController
     public function index()
     {
         $blocks = FrontBlock::orderBy('sort_id')->get();
-        return $this->sendResponse($blocks->toArray(), '');
+        return $this->sendResponse($blocks->toArray());
     }
 
     public function show($id){
 
 
-     /*  $blocks = BlockItem::where('front_block_id', $id)->get();
+        /*$blocks = BlockItem::where('front_block_id', $id)->get();
         if (is_null($blocks)) {
             return $this->sendError('Product not found.');
         }*/
@@ -38,7 +38,7 @@ class FrontEditorController extends BaseController
         $frontBlockArr = $frontBlock->toArray();
         $frontBlockArr['items'] = $blockItems;
 
-        return $this->sendResponse($frontBlockArr, 'Block retrieved successfully.');
+        return $this->sendResponse($frontBlockArr);
     }
 
     public function store(Request $request)
@@ -61,7 +61,7 @@ class FrontEditorController extends BaseController
             $block->items()->create(['params'=>json_encode($params)]);
         }
        // $input
-        return $this->sendResponse($block->toArray(), 'Block created successfully.');
+        return $this->sendResponse($block->toArray());
     }
 
     public function update(Request $request, $id)
@@ -77,7 +77,7 @@ class FrontEditorController extends BaseController
        //$frontBlock->items()->createMany($input['params']);
 
 
-        return $this->sendResponse(gettype($input['params']), '2221312');
+        return $this->sendResponse(gettype($input['params']));
         //dd($input);
         /*$validator = Validator::make($input, [
             'name' => 'required',
