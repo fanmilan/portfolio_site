@@ -16,8 +16,6 @@ class FrontEditorController extends BaseController
     }
 
     public function show($id){
-
-
         /*$blocks = BlockItem::where('front_block_id', $id)->get();
         if (is_null($blocks)) {
             return $this->sendError('Product not found.');
@@ -44,18 +42,8 @@ class FrontEditorController extends BaseController
     public function store(Request $request)
     {
         $input = $request->all();
-
-
-
-        /* $validator = Validator::make($input, [
-             'email' => 'required',
-             'type' => 'required'
-         ]);
-         if($validator->fails()){
-             return $this->sendError('Validation Error.', $validator->errors());
-         }*/
-
-        $block = FrontBlock::create(['name'=>$input['name']]);
+        $name = $input['name'] || 'Без названия';
+        $block = FrontBlock::create(['name'=>$name]);
         $block->items()->delete();
         foreach ($input['params'] as $params) {
             $block->items()->create(['params'=>json_encode($params)]);

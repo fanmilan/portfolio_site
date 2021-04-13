@@ -14,13 +14,7 @@ class MailController extends BaseController
      */
     public function index(Request $request)
     {
-        $mails = Mail::all()->map(function($item){
-            return [
-                'id'=>$item->id,
-                'email'=>$item->email,
-                'created_at'=>$item->items
-            ];
-            });
+        $mails = Mail::all();
         return $this->sendResponse($mails->toArray());
     }
 

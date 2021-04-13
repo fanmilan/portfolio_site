@@ -20,14 +20,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-/*Route::middleware('auth:api')->group( function () {
-    Route::resource('mails', MailController::class);
-});*/
     Route::apiResource('mails', MailController::class);
     Route::apiResource('ideas', IdeaController::class);
 
     Route::get('front_editor/front', [FrontEditorController::class, 'getBlocksForFront']);
     Route::put('front_editor/front', [FrontEditorController::class, 'updateFrontBlocks']);
+
     Route::apiResource('front_editor', FrontEditorController::class);
 
 
