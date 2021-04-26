@@ -19,7 +19,6 @@
 <div>
     <h2>Скриншоты</h2>
     <div class="image-wrap">
-        <img src="https://pishchulin.site/img/gamemovie/Screenshot_1.png"/>
         <img src="https://pishchulin.site/img/gamemovie/Screenshot_2.png"/>
         <img src="https://pishchulin.site/img/gamemovie/Screenshot_3.png"/>
     </div>

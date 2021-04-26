@@ -13,8 +13,8 @@ class UpdateFrontBlocks extends Migration
      */
     public function up()
     {
-        Schema::dropIfExists('front_blocks');
         Schema::dropIfExists('block_items');
+        Schema::dropIfExists('front_blocks');
 
         Schema::create('front_blocks', function (Blueprint $table) {
             $table->id();
