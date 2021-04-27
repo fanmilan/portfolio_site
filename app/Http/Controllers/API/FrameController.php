@@ -17,4 +17,10 @@ class FrameController extends BaseController
         $frames = Frame::limit(40)->get();
         return $this->sendResponse($frames->toArray());
     }
+
+    public function show($id) {
+        $frame = Frame::findOrFail($id);
+        return $this->sendResponse($frame->toArray());
+    }
+
 }
